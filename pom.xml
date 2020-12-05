@@ -20,7 +20,7 @@
   <modelVersion>4.0.0</modelVersion>
   <name>SIRENE</name>
   <groupId>io.cdap</groupId>
-  <artifactId>SIRENE</artifactId>
+  <artifactId>SIRENE-API</artifactId>
   <version>1.4.0-SNAPSHOT</version>
 
   <licenses>

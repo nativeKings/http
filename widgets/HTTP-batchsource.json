@@ -14,9 +14,22 @@
           "name": "referenceName"
         },
         {
-          "widget-type": "textbox",
+          "widget-type": "select",
           "label": "URL",
-          "name": "url"
+          "name": "url",
+          "widget-attributes": {
+            "values": [
+              "https://api.insee.fr/entreprises/sirene/siren",
+              "https://api.insee.fr/entreprises/sirene/siren/{siren}",
+              "https://api.insee.fr/entreprises/sirene/siren/nonDiffusable",
+              "https://api.insee.fr/entreprises/sirene/refusImmatriculationRcs",
+              "https://api.insee.fr/entreprises/sirene/siret",
+              "https://api.insee.fr/entreprises/sirene/siret/{siret}",
+              "https://api.insee.fr/entreprises/sirene/siret/liensSuccession",
+              "https://api.insee.fr/entreprises/sirene/nonDiffusibles",
+              "https://api.insee.fr/entreprises/sirene/informations"
+            ]
+          }
         },
         {
           "widget-type": "select",
@@ -105,10 +118,9 @@
       ]
     },
     {
-      "label": "OAuth2",
       "properties": [
         {
-          "widget-type": "toggle",
+          "widget-type": "hidden",
           "label": "OAuth2 Enabled",
           "name": "oauth2Enabled",
           "widget-attributes": {
@@ -124,77 +136,74 @@
           }
         },
         {
-          "widget-type": "textbox",
+          "widget-type": "hidden",
           "label": "Auth URL",
           "name": "authUrl"
         },
         {
-          "widget-type": "textbox",
+          "widget-type": "hidden",
           "label": "Token URL",
           "name": "tokenUrl"
         },
         {
-          "widget-type": "textbox",
+          "widget-type": "hidden",
           "label": "Client ID",
           "name": "clientId"
         },
         {
-          "widget-type": "password",
+          "widget-type": "hidden",
           "label": "Client Secret",
           "name": "clientSecret"
         },
         {
-          "widget-type": "textbox",
+          "widget-type": "hidden",
           "label": "Scopes",
           "name": "scopes"
         },
         {
-          "widget-type": "textbox",
+          "widget-type": "hidden",
           "label": "Refresh Token",
           "name": "refreshToken"
         }
       ]
     },
     {
-      "label": "Basic Authentication",
       "properties": [
         {
-          "widget-type": "textbox",
+          "widget-type": "hidden",
           "label": "Username",
           "name": "username"
         },
         {
-          "widget-type": "password",
+          "widget-type": "hidden",
           "label": "Password",
           "name": "password"
         }
       ]
     },
     {
-      "label": "HTTP Proxy",
       "properties": [
         {
-          "widget-type": "textbox",
+          "widget-type": "hidden",
           "label": "Proxy URL",
           "name": "proxyUrl"
         },
         {
-          "widget-type": "textbox",
+          "widget-type": "hidden",
           "label": "Username",
           "name": "proxyUsername"
         },
         {
-          "widget-type": "password",
+          "widget-type": "hidden",
           "label": "Password",
           "name": "proxyPassword"
         }
       ]
     },
     {
-      "label": "Error Handling",
       "properties": [
         {
-          "widget-type": "keyvalue-dropdown",
+          "widget-type": "hidden",
           "label": "HTTP Errors Handling",
           "name": "httpErrorsHandling",
           "widget-attributes": {
@@ -213,7 +222,7 @@
           }
         },
         {
-          "widget-type": "radio-group",
+          "widget-type": "hidden",
           "label": "Non-HTTP Error Handling",
           "name": "errorHandling",
           "widget-attributes": {
@@ -236,7 +245,7 @@
           }
         },
         {
-          "widget-type": "radio-group",
+          "widget-type": "hidden",
           "label": "Retry Policy",
           "name": "retryPolicy",
           "widget-attributes": {
@@ -255,7 +264,7 @@
           }
         },
         {
-          "widget-type": "number",
+          "widget-type": "hidden",
           "label": "Linear Retry Interval",
           "name": "linearRetryInterval",
           "widget-attributes": {
@@ -264,7 +273,7 @@
           }
         },
         {
-          "widget-type": "number",
+          "widget-type": "hidden",
           "label": "Max Retry Duration",
           "name": "maxRetryDuration",
           "widget-attributes": {
@@ -273,7 +282,7 @@
           }
         },
         {
-          "widget-type": "number",
+          "widget-type": "hidden",
           "label": "Connect Timeout",
           "name": "connectTimeout",
           "widget-attributes": {
@@ -282,7 +291,7 @@
           }
         },
         {
-          "widget-type": "number",
+          "widget-type": "hidden",
           "label": "Read Timeout",
           "name": "readTimeout",
           "widget-attributes": {
@@ -379,10 +388,9 @@
       ]
     },
     {
-      "label": "SSL/TLS",
       "properties": [
         {
-          "widget-type": "toggle",
+          "widget-type": "hidden",
           "label": "Verify HTTPS Trust Certificates",
           "name": "verifyHttps",
           "widget-attributes": {
@@ -398,12 +406,12 @@
           }
         },
         {
-          "widget-type": "textbox",
+          "widget-type": "hidden",
           "label": "Keystore File",
           "name": "keystoreFile"
         },
         {
-          "widget-type": "select",
+          "widget-type": "hidden",
           "label": "Keystore Type",
           "name": "keystoreType",
           "widget-attributes": {
@@ -416,12 +424,12 @@
           }
         },
         {
-          "widget-type": "password",
+          "widget-type": "hidden",
           "label": "Keystore Password",
           "name": "keystorePassword"
         },
         {
-          "widget-type": "textbox",
+          "widget-type": "hidden",
           "label": "Keystore Key Algorithm",
           "name": "keystoreKeyAlgorithm",
           "widget-attributes": {
@@ -429,12 +437,12 @@
           }
         },
         {
-          "widget-type": "textbox",
+          "widget-type": "hidden",
           "label": "TrustStore File",
           "name": "trustStoreFile"
         },
         {
-          "widget-type": "select",
+          "widget-type": "hidden",
           "label": "TrustStore Type",
           "name": "trustStoreType",
           "widget-attributes": {
@@ -447,12 +455,12 @@
           }
         },
         {
-          "widget-type": "password",
+          "widget-type": "hidden",
           "label": "TrustStore Password",
           "name": "trustStorePassword"
         },
         {
-          "widget-type": "textbox",
+          "widget-type": "hidden",
           "label": "TrustStore Key Algorithm",
           "name": "trustStoreKeyAlgorithm",
           "widget-attributes": {
@@ -460,7 +468,7 @@
           }
         },
         {
-          "widget-type": "csv",
+          "widget-type": "hidden",
           "label": "Transport Protocols",
           "name": "transportProtocols",
           "widget-attributes": {
@@ -468,7 +476,7 @@
           }
         },
         {
-          "widget-type": "textbox",
+          "widget-type": "hidden",
           "label": "Cipher Suites",
           "name": "cipherSuites"
         }
@@ -505,7 +513,7 @@
       "name": "Proxy authentication",
       "condition": {
         "property": "proxyUrl",
-        "operator": "exists",
+        "operator": "exists"
       },
       "show": [
         {
