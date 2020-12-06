@@ -2,7 +2,7 @@
   "metadata": {
     "spec-version": "1.0"
   },
-  "display-name": "SIRENE",
+  "display-name": "SIRENE-SINK",
   "configuration-groups": [
     {
       "label": "HTTP Sink Properties",
