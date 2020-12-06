@@ -114,11 +114,7 @@
               }
             ]
           }
-        }
-      ]
-    },
-    {
-      "properties": [
+        },
         {
           "widget-type": "hidden",
           "label": "OAuth2 Enabled",
@@ -164,11 +160,8 @@
           "widget-type": "hidden",
           "label": "Refresh Token",
           "name": "refreshToken"
-        }
-      ]
-    },
-    {
-      "properties": [
+        },
+
         {
           "widget-type": "hidden",
           "label": "Username",
@@ -178,11 +171,7 @@
           "widget-type": "hidden",
           "label": "Password",
           "name": "password"
-        }
-      ]
-    },
-    {
-      "properties": [
+        },
         {
           "widget-type": "hidden",
           "label": "Proxy URL",
@@ -197,12 +186,8 @@
           "widget-type": "hidden",
           "label": "Password",
           "name": "proxyPassword"
-        }
-      ]
-    },
+        },
     {
-      "properties": [
-        {
           "widget-type": "hidden",
           "label": "HTTP Errors Handling",
           "name": "httpErrorsHandling",
